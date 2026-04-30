@@ -2,6 +2,8 @@ class Pet < ApplicationRecord
   belongs_to :owner
   has_many :appointments
 
+  before_save :capitalize_name
+
   scope :by_species, ->(species) { where(species: species) }
 
   validates :name, presence: true
@@ -19,4 +21,8 @@ class Pet < ApplicationRecord
       errors.add(:date_of_birth, "can't be in the future")
     end
   end
+
+  def capitalize_name
+    self.name = name.capitalize if name.present?
+  end  
 end
