@@ -13,7 +13,7 @@
     </p>
   </div>
 
-  <h2 class="mb-3">Appointments</h2>
+  <h2 class="mb-3">Past Appointments</h2>
 
   <div class="table-responsive">
     <table class="table table-bordered table-striped text-center align-middle">
@@ -25,7 +25,7 @@
         </tr>
       </thead>
       <tbody>
-        <% @pet.appointments.each do |appointment| %>
+        <% @pet.appointments.past.each do |appointment| %>
           <tr>
             <td><%= link_to appointment.date.strftime("%B %d, %Y"), appointment_path(appointment) %></td>
             <td><%= link_to "#{appointment.vet.first_name} #{appointment.vet.last_name}", vet_path(appointment.vet) %></td>
