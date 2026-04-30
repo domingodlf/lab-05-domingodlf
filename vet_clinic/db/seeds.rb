@@ -42,7 +42,7 @@ owner3 = Owner.create(
 
 pet1 = Pet.create(
   name: "Firulais",
-  species: "Dog",
+  species: "dog",
   breed: "Labrador",
   date_of_birth: "2020-05-10",
   weight: 25.5,
@@ -51,7 +51,7 @@ pet1 = Pet.create(
 
 pet2 = Pet.create(
   name: "Michi",
-  species: "Cat",
+  species: "cat",
   breed: "Siames",
   date_of_birth: "2021-03-15",
   weight: 4.2,
@@ -60,7 +60,7 @@ pet2 = Pet.create(
 
 pet3 = Pet.create(
   name: "Rocky",
-  species: "Dog",
+  species: "dog",
   breed: "Bulldog",
   date_of_birth: "2019-07-20",
   weight: 18.0,
@@ -69,7 +69,7 @@ pet3 = Pet.create(
 
 pet4 = Pet.create(
   name: "Luna",
-  species: "Cat",
+  species: "cat",
   breed: "Persa",
   date_of_birth: "2022-01-10",
   weight: 3.8,
@@ -78,7 +78,7 @@ pet4 = Pet.create(
 
 pet5 = Pet.create(
   name: "Bunny",
-  species: "Rabbit",
+  species: "rabbit",
   breed: "Mini Lop",
   date_of_birth: "2021-11-05",
   weight: 2.1,
@@ -87,7 +87,7 @@ pet5 = Pet.create(
 
 pet6 = Pet.create(
   name: "Max",
-  species: "Dog",
+  species: "dog",
   breed: "Golden Retriever",
   date_of_birth: "2022-06-15",
   weight: 28.0,
@@ -96,7 +96,7 @@ pet6 = Pet.create(
 
 pet7 = Pet.create(
   name: "Nala",
-  species: "Cat",
+  species: "cat",
   breed: "Maine Coon",
   date_of_birth: "2023-02-20",
   weight: 5.5,
@@ -105,7 +105,7 @@ pet7 = Pet.create(
 
 pet8 = Pet.create(
   name: "Toby",
-  species: "Dog",
+  species: "dog",
   breed: "Poodle",
   date_of_birth: "2021-09-10",
   weight: 7.0,
