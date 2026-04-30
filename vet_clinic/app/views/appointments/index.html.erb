@@ -19,7 +19,7 @@
             <td><%= link_to appointment.pet.name, pet_path(appointment.pet) %></td>
             <td><%= link_to "#{appointment.vet.first_name} #{appointment.vet.last_name}", vet_path(appointment.vet) %></td>
             <td><%= appointment.reason %></td>
-            <td><%= ["Scheduled", "Completed", "Cancelled", "In progress"][appointment.status] %></td>
+            <td><%= appointment.status.humanize %></td>
           </tr>
         <% end %>
       </tbody>
