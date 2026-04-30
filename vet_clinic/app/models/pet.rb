@@ -2,6 +2,8 @@ class Pet < ApplicationRecord
   belongs_to :owner
   has_many :appointments
 
+  scope :by_species, ->(species) { where(species: species) }
+
   validates :name, presence: true
   validates :species, presence: true, inclusion: { in: %w[dog cat rabbit bird reptile other] }
   validates :date_of_birth, presence: true

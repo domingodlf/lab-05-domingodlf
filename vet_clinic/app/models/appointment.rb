@@ -10,6 +10,9 @@ class Appointment < ApplicationRecord
     cancelled: 3
   }
 
+  scope :upcoming, -> { where("date > ?", Time.current).order(date: :asc) }
+  scope :past, -> { where("date < ?", Time.current).order(date: :desc) }
+  
   validates :date, presence: true
   validates :reason, presence: true
   validates :pet, presence: true
